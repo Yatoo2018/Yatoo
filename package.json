@@ -1,0 +1,11 @@
+{
+  "name": "yatoo",
+  "version": "1.0.0",
+  "description": "You can use the [editor on GitHub](https://github.com/Yatoo2018/Yatoo/edit/master/README.md) to maintain and preview the content for your website in Markdown files.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
