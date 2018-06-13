@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "Welcome!"
+date:   2018-06-13 17:09:57 +0800
+categories: 个人
+---
+当前第一篇文章，仅此记录一下此刻冲开博客的心情。
+是否有那么一刻，打开一篇博文，会忽然想起曾经想要搭建一个博客而折腾不止。
+只因自己是个前端。
+
+前端，一个需要对各种网页技能都精通的职业  
+只因是个前端  
+趁着年轻还可以继续折腾  
+只因自己是个前端  
+于是下定决心要用文字来记录过去，现在，未来的坎坷经历。
+
+Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/
