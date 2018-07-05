@@ -2,10 +2,10 @@
 实现一个 img三个字符随机组合，不重复出现 的正则表达式
 经过群里同学们和老师的讨论最终确定结果为：/^((\[img\])(?!.*\2))+$/
 我们可以将正则放在[正则铁路图工具](https://yatoo2018.github.io/regexper-static/build/index.html)中显示出铁路图
-![正则铁路图](../assert/imgs/regexp-railroad.png)
+![正则铁路图](../../../assert/imgs/regexp-railroad.png)
 这个结果的测试用例，请参见[测试项目](https://github.com/Yatoo2018/RegExp-showcase13)
 在这里主要是想分步解析这个正则，所以我们将上述正则拆解一下, 如下图：
-![正则拆解](../assert/imgs/reg-gmi.jpg)
+![正则拆解](../../../assert/imgs/reg-gmi.jpg)
 我们先不管顺序哈，这个图做的比较粗糙，这个顺序只为了做个区分。
 我们先看
  1. 红色线条7  ====>  \[img\] 表示匹配img这三个字符集中的任何一个
