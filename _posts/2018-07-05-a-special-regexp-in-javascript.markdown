@@ -2,7 +2,7 @@
 layout: post
 title:  "一个特殊的正则表达式"
 date:   2018-06-13 17:09:57 +0800
-categories: 正则表达式 regexp
+categories:
 ---
 <style>
 li {
