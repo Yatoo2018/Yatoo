@@ -1,3 +1,16 @@
+---
+layout: post
+title:  "一个特殊的正则表达式"
+date:   2018-06-13 17:09:57 +0800
+categories: 正则表达式 regexp
+---
+<style>
+li {
+    line-height: 40px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+}
+</style>
 ## 正则表达式
 实现一个 img三个字符随机组合，不重复出现 的正则表达式
 经过群里同学们和老师的讨论最终确定结果为：/^((\[img\])(?!.*\2))+$/
