@@ -58,6 +58,7 @@ width / rate = width2 / rate2 = 固定的rem值
 rate2 = width2 / (1920px / 16) = 16 * width2 / 1920
 ```
 上述公式适用舞台元素同样也适用设计稿内的其他元素，因为固定的rem值是全局固定的，那么我们就可以写成通用换算rate的公式
+
 ```
 rate = baseFontSize * clientWidth / psdWidth
 ```
