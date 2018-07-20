@@ -9,7 +9,8 @@
 ### 要做到上述有好几种思路：
 1. 使用mate标签的缩放属性设置缩放比例
 ```jade
- meta(name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
+ meta(name="viewport" content=`width=device-width,initial-scale=1.0,
+ minimum-scale=1.0,maximum-scale=1.0,user-scalable=no`)
  // 改变这个initial-scale的值
 ```
 2. 使用transform:scaleX(clientWidth/psdWidth)
