@@ -25,9 +25,9 @@ li {
     2. \* => 匹配前面的子表达式零次或多次
     3. \2 => 对所获取的匹配的引用，在这里表示匹配 group2匹配到的字符串
  4. <code style="color:green">绿色线条4</code>  ====> <code style="font-size:border;color:black;">(?!.*\2)</code> 正向否定断言，非捕获型匹配，表示匹配到6的内容都是否定的
- 5. <code style="color:lightblue">浅蓝色线条2</code>  ====> <code style="font-size:border;color:black;">(\[img\])(?!.*\2)</code> 匹配(\[img\])中的一个字符，但是后面的字符串中不包含 **任意长度的任意字符串** 和 **(\[img\])这个表达式之前已经捕获到的那个字符** 的字符串
+ 5. <code style="color:lightblue">浅蓝色线条5</code>  ====> <code style="font-size:border;color:black;">(\[img\])(?!.*\2)</code> 匹配(\[img\])中的一个字符，但是后面的字符串中不包含 **任意长度的任意字符串** 和 **(\[img\])这个表达式之前已经捕获到的那个字符** 的字符串
     1. 因为在整个表达式中((\[img\])(?!.*\2))是group1,（\[img\]）是group2, 所以\2就指的是（\[img\]）这个匹配group
- 6. <code style="color:gray">灰色线条5</code>  ====> <code style="font-size:border;color:black;">((\[img\])(?!.*\2))</code> 将5进行分组 group1 引用的话 \1
+ 6. <code style="color:gray">灰色线条2</code>  ====> <code style="font-size:border;color:black;">((\[img\])(?!.*\2))</code> 将5进行分组 group1 引用的话 \1
  7. <code style="color:#ddd">白色线条1</code>  ====> <code style="font-size:border;color:black;">((\[img\])(?!.*\2))+</code>将6这个匹配重复1到多次，因为这里只能匹配最多三个字符，再多一个字符就会重复，所以次数是1-3
 
 拆解到这里，可以概括一下就是，从字符串开头开始匹配每一个字符，匹配都需要进行5的断言，也就是不能出现和当前匹配的字符重复。
