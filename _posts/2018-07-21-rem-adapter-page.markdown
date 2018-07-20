@@ -14,6 +14,7 @@
 ```
 2. 使用transform:scaleX(clientWidth/psdWidth)
 3. 使用rem单位
+
 ### 使用REM单位
 这里，我们先看第3种方案，那我们就看看rem是如何做的？
 
@@ -23,8 +24,8 @@
 “为了保证我们写一份数据rem值在不同宽度屏幕下都适配”
 
 
-整理上述要求，可以得到如下需求：
-需求：根据客户端窗口大小动态更新html的fontSize值，以保证元素适应
+整理上述要求，可以得到：  
+需求：根据客户端窗口大小动态更新html的fontSize值，以保证元素适应  
 目的: 动态fontSize值的计算规则
 
 根据rem的机理，我们可以得到这样一个公式
@@ -35,7 +36,7 @@
 值得一提的是，浏览器默认html的大小通常为16px, 这时候 ```rate = 16```
 
 ### 确定rate和clientWidth的关系
-我们就需要找出 rate 和 clientWidth的关系
+客户端宽度为clientWidth时，rate和clientWidth的关系是怎样的呢？我们需要通过现在已知的条件和要求，找出这俩者之间的关系，那这些条件和要求（潜在的，或者明确的）我们就需关注一下，到底哪些条件约束着他们的关系，为了避免过于空洞，我们从一个特定的元素切入，寻找这个特定元素的rate的计算规则，并将计算方法的各个变化因素都尽量的消除，仅仅剩下clientWidth或者已知的几个变化。
 #### 找出特定元素上rate的计算方法
 我们取一个该设计稿中一个元素A为例, 以A元素的width属性为例：
 
@@ -64,6 +65,8 @@ rate = baseFontSize * clientWidth / psdWidth
 这个基准值baseFontSize可以设置任何合适的值，但是为了方便获取这个rem值，也就是这个值 psdWidth / baseFontSize，当然是越好换算越好。
 这样我们给html设置 
 ```
-document.documentElement.style.fontSize = rate + 'px' = baseFontSize * clientWidth / psdWidth + 'px'
+document.documentElement.style.fontSize 
+= rate + 'px' 
+= baseFontSize * clientWidth / psdWidth + 'px'
 ```
 就可以适配全屏幕。
