@@ -78,7 +78,7 @@ Blink是WebKit的WebCore组件的分支，它最初是KDE中的KHTML和KJS库的
 
 ### [各个引擎对比表](https://en.wikipedia.org/wiki/Comparison_of_browser_engines)
 
-|Engine	| Status|	Steward|	License	Embedded in|
+|Engine	| Status|	Steward|	Embedded in|
 | --- | --- | --- | --- |
 |WebKit	| Active|	Apple|		Safari browser, Adobe AIR apps, and other browsers like Maxthon|
 |Blink	| Active|	Google|		Google Chrome and Chromium, plus many other browsers including Opera and Vivaldi|
@@ -98,7 +98,7 @@ Blink是WebKit的WebCore组件的分支，它最初是KDE中的KHTML和KJS库的
 5. Edge
 
 ### 浏览器Timeline
-![浏览器timeline](../../../engines_timeline.png)
+![浏览器timeline](../../../assert/imgs/engines_timeline.png)
 
 ## javascript engine [参见wiki](https://en.wikipedia.org/wiki/JavaScript_engine)
 javascript engine 用于解析和运行javascript代码。
