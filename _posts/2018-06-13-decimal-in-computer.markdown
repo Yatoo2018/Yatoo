@@ -34,20 +34,19 @@ Number(0.1).toString(2)
 那么我们就逐步来：
   
 #### 语句功能
-我们的语句是 Number(0.1).toString(2)
+我们的语句是 Number(0.1).toString(2)  
 我们拆分下这个复合语句
 ```
 let wrapNumber = Number(0.1);                 (1)
 let binaryNumber = wrapNumber.toString(2);    (2)
 ```
-语句(1)将一个基本类型的数值0.1,使用数值类型的构造器将其包装成wrapNumber
-[补充内容:关于wrapNumber的类型][1]
-因为[原始数值类型][2]的数值存在一些有用的方法，比如 toFixed方法，
-和我们第二行语句中的toString()方法等。
-[toString([radix])][3]方法的将数值转换成一个radix进制数值对象的字符串
-所以到这一步，我们应该知道，"0.0001100110011001100110011001100110011001100110011001101" 代表的是十进制数0.1的2进制表示形式
-[如果你看了这篇就懂了，那就不用继续看下去了][4]
-要了解这个字符串我们必须得了解一下，数据在计算机里是怎么表示的，又是怎么样运算的？
+语句(1)将一个基本类型的数值0.1,使用数值类型的构造器将其包装成wrapNumber  
+[补充内容:关于wrapNumber的类型][1]  
+因为[原始数值类型][2]的数值存在一些有用的方法，比如 toFixed方法，和我们第二行语句中的toString()方法等。  
+[toString([radix])][3]方法的将数值转换成一个radix进制数值对象的字符串  
+所以到这一步，我们应该知道，"0.0001100110011001100110011001100110011001100110011001101" 代表的是十进制数0.1的2进制表示形式  
+[如果你看了这篇就懂了，那就不用继续看下去了][4]  
+要了解这个字符串我们必须得了解一下，数据在计算机里是怎么表示的，又是怎么样运算的？  
 ### 数据的表示
 #### 计算机中的信息表示
 计算机内部的实现：在现代计算机内部，所有的信息（图，声，字符串，数值等）都是通过二进制数值的形式来表示的；
@@ -61,7 +60,7 @@ let binaryNumber = wrapNumber.toString(2);    (2)
 十进制的6，    二进制:\<em style="text-decoration:line-through;font-style:normal;color:red;">00100111\</em> 00000110(Golden纠正) 一个字节来表示 0～2^8-1的数共2^8个数
 十进制的512，二进制:  000000001 000000000 俩个字节来表示 0～2^16-1共2^16个数 
 二进制数转十进制数的方法，简单概括为：按权相加。
-![clipboard.png](https://segmentfault.com/img/bVbckuC?w=352&h=96)
+![clipboard.png](https://sfault-image.b0.upaiyun.com/154/019/1540194220-5b2248bec7861_articlex)
 
 对于XX进制数之间的转换我在这里就不赘述了，不是本篇文章讨论的核心问题：
 所以程序中使用的十进制数，在计算机中会被编译为二进制数进行运算。
@@ -76,11 +75,11 @@ let binaryNumber = wrapNumber.toString(2);    (2)
 
 根据现在编程语言广泛采用的国际标准IEEE 754中制定的浮点数的表示方式
 下面三张图来自[《程序是怎么跑起来的》][7]
-![clipboard.png](https://segmentfault.com/img/bVbcnVc?w=577&h=371)
+![clipboard.png](https://sfault-image.b0.upaiyun.com/329/219/3292199754-5b246852e8180_articlex)
 双精度和单精度对应的指数和尾数的长度入下图：
-![clipboard.png](https://segmentfault.com/img/bVbcnVe?w=586&h=333)
+![clipboard.png](https://sfault-image.b0.upaiyun.com/200/249/2002499969-5b24688a6f359_articlex)
 依据浮点数表示法，我们可以将0.75表示成
-![clipboard.png](https://segmentfault.com/img/bVbcnVx?w=571&h=198)
+![clipboard.png](https://sfault-image.b0.upaiyun.com/111/616/111616867-5b246a43f039f_articlex)
 
 为了表示数的唯一性，标准对表示的形式也做了细致的规定：只能使用图3-5 中第一行的这种形式
 
