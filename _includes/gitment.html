@@ -1,0 +1,21 @@
+<div class="gitment-wrap-layout">
+    <div id="gitment-container"></div>
+    <script src="{{ "/assets/js/xxhash.min.js" | relative_url }}"></script>
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    <script>
+      var c,d = (c = location.href.split('/'))[c.length-1].split('.')[0];
+      if(d == "") d = (c = location.href.split('/'))[c.length-2].split('.')[0]
+      var gitment = new Gitment({
+        id: d + XXH.h32( location.href , 0xABCD ).toString(16),
+        owner: 'Yatoo2018',
+        repo: 'Yatoo',
+        oauth: {
+          client_id: 'f0cdccc2b2ef5b82332b',
+          client_secret: 'baf0c861a661c82d3b421684ae38cd5eea09eb1d',
+        },
+      })
+      gitment.render('gitment-container')
+      document.querySelector('#gitment-container').classList.add('wrapper');
+    </script>
+</div>
