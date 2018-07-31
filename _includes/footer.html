@@ -44,5 +44,9 @@
       },
     })
     gitment.render('gitment-container')
+
+    setTimetout(function(){
+      document.querySelector('#gitment-container').classList.add('wrapper');
+    }, 1000)
   </script>
 </footer>
