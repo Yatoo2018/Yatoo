@@ -4,11 +4,12 @@
 A selector's specificity is calculated as follows:  
 一个选择器的权重计算依据下面规则：
 
-count 1 if the declaration is from is a 'style' attribute rather than a rule with a selector, 0 otherwise (= a) (In HTML, values of an element's "style" attribute are style sheet rules. These rules have no selectors, so a=1, b=0, c=0, and d=0.)
-count the number of ID attributes in the selector (= b)
-count the number of other attributes and pseudo-classes in the selector (= c)
-count the number of element names and pseudo-elements in the selector (= d)
-The specificity is based only on the form of the selector. In particular, a selector of the form "[id=p33]" is counted as an attribute selector (a=0, b=0, c=1, d=0), even if the id attribute is defined as an "ID" in the source document's DTD.
+1. count 1 if the declaration is from is a 'style' attribute rather than a rule with a selector, 0 otherwise (= a) (In HTML, values of an element's "style" attribute are style sheet rules. These rules have no selectors, so a=1, b=0, c=0, and d=0.)
+2. count the number of ID attributes in the selector (= b)
+3. count the number of other attributes and pseudo-classes in the selector (= c)
+4. count the number of element names and pseudo-elements in the selector (= d)
+5. The specificity is based only on the form of the selector. In particular, a selector of the form "[id=p33]" is counted as an attribute selector (a=0, b=0, c=1, d=0), even if the id attribute is defined as an "ID" in the source document's DTD.
+
 Concatenating the four numbers a-b-c-d (in a number system with a large base) gives the specificity.
 
 1. 如果声明是“style”属性而不是带有选择器的规则, 计数1，否则为计数0（= a）（在HTML中，元素的“样式”属性的值是样式表规则）。这些规则没有选择器，所以a＝1，b＝0，c＝0，d＝0。
