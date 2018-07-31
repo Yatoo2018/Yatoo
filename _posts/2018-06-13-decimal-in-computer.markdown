@@ -74,12 +74,12 @@ let binaryNumber = wrapNumber.toString(2);    (2)
 答案是不能全部表示；      惊讶后又点了点头.jpg
 
 根据现在编程语言广泛采用的国际标准IEEE 754中制定的浮点数的表示方式
-下面三张图来自[《程序是怎么跑起来的》][7]
-![clipboard.png](https://sfault-image.b0.upaiyun.com/329/219/3292199754-5b246852e8180_articlex)
-双精度和单精度对应的指数和尾数的长度入下图：
-![clipboard.png](https://sfault-image.b0.upaiyun.com/200/249/2002499969-5b24688a6f359_articlex)
-依据浮点数表示法，我们可以将0.75表示成
-![clipboard.png](https://sfault-image.b0.upaiyun.com/111/616/111616867-5b246a43f039f_articlex)
+下面三张图来自[《程序是怎么跑起来的》][7]  
+![clipboard.png](https://sfault-image.b0.upaiyun.com/329/219/3292199754-5b246852e8180_articlex)  
+双精度和单精度对应的指数和尾数的长度入下图：  
+![clipboard.png](https://sfault-image.b0.upaiyun.com/200/249/2002499969-5b24688a6f359_articlex)  
+依据浮点数表示法，我们可以将0.75表示成  
+![clipboard.png](https://sfault-image.b0.upaiyun.com/111/616/111616867-5b246a43f039f_articlex)  
 
 为了表示数的唯一性，标准对表示的形式也做了细致的规定：只能使用图3-5 中第一行的这种形式
 
