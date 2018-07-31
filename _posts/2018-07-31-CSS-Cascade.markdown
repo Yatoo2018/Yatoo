@@ -1,7 +1,7 @@
 ## [CSS权重计算](https://www.w3.org/TR/CSS2/cascade.html#specificity)
 
 
-A selector's specificity is calculated as follows:
+A selector's specificity is calculated as follows:  
 一个选择器的权重计算依据下面规则：
 
 count 1 if the declaration is from is a 'style' attribute rather than a rule with a selector, 0 otherwise (= a) (In HTML, values of an element's "style" attribute are style sheet rules. These rules have no selectors, so a=1, b=0, c=0, and d=0.)
@@ -21,9 +21,9 @@ Concatenating the four numbers a-b-c-d (in a number system with a large base) gi
 
 5. 特异性仅基于选择器的形式。特别地，将形式“[id= p33”]的选择器作为属性选择器（a＝0，b＝0，c＝1，d＝0）计数，即使id属性被定义为源文档DTD中的“id”。
 
-注意1: **这里的 （= n） 这个代表的含义是 将统计出来的数目用 n 来表示， 那这里，在一组（一组指的是我们写的复合选择器）选择器里，a就是属性选择器的数目，b就是id选择器的数目，c就是属性和伪类的数目，d就是元素和伪元素的数目.**
+注意1: *这里的 （= n） 这个代表的含义是 将统计出来的数目用 n 来表示， 那这里，在一组（一组指的是我们写的复合选择器）选择器里，a就是属性选择器的数目，b就是id选择器的数目，c就是属性和伪类的数目，d就是元素和伪元素的数目.*
 
-注意2：**通用选择器（*），子选择器（>）和相邻同胞选择器（+）并不在这四个等级中，所以他们的权值都为0。**
+注意2：*通用选择器（*），子选择器（>）和相邻同胞选择器（+）并不在这四个等级中，所以他们的权值都为0。*
 
 将四个数字a-b-c-d（在一个有大小关系的数字系统中）连接起来给出了特殊性。
 再解释下：将这四个数字连起来，并放入一个有大小关系的数字系统中，其值就代表了这条选择器的权重。
@@ -47,8 +47,8 @@ Concatenating the four numbers a-b-c-d (in a number system with a large base) gi
 
 请看如下测试：
 ![specificity](../../../assert/imgs/css-cascade-specificity.jpg)  
-应用了11个id选择器，一个属性选择器，按照上述计算：11* 100 > 1000 应该id选择器生效，  
-但是最后生效的样式仍然使属性选择器，所以这个权重系统的假设并不正确，而这个权重系统的判断规则应是如下规则，
+#div11 应用了11个id选择器，一个style属性，按照上述计算：11 * 100 > 1000 * 1 应该id选择器生效，  
+但是最后生效的样式仍然使style属性，所以这个权重系统的假设并不正确，而这个权重系统的判断规则应是如下规则，
 
 ```
 规则1 a1-b1-c1-d1
