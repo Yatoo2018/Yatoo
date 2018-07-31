@@ -1,3 +1,7 @@
+---
+layout: post
+title:  "git删除子模块"
+---
 ## To remove a submodule you need to:
 
  1. Delete the relevant section from the .gitmodules file.

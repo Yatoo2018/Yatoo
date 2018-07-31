@@ -1,3 +1,7 @@
+---
+layout: post
+title: "浏览器引擎"
+---
 ## 你所了解的浏览器引擎的几个概念
 
 ### 浏览器引擎[参见wiki](https://en.wikipedia.org/wiki/Browser_engine) 
