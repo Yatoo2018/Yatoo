@@ -2,6 +2,17 @@
 layout: post
 title: "层叠样式表中的层叠的含义"
 ---
+<style>
+    blockquote {
+        color: #a5a5a5;
+        border-left: 4px solid #e8e8e8;
+        padding-left: 15px;
+        font-size: 16px;
+        letter-spacing: 0px;
+        font-style: normal;
+    }
+</style>
+
 ## [CSS权重计算](https://www.w3.org/TR/CSS2/cascade.html#specificity)
 
 
