@@ -57,7 +57,7 @@ let binaryNumber = wrapNumber.toString(2);    (2)
 而计算机中处理信息的基本计量单位是字节(Byte). 8位为1个字节. 位是最小单位,字节是基本单位。
 所以我们表示
 十进制的1，    二进制:00000001 一个字节来表示
-十进制的6，    二进制:\<em style="text-decoration:line-through;font-style:normal;color:red;">00100111\</em> 00000110(Golden纠正) 一个字节来表示 0～2^8-1的数共2^8个数
+十进制的6，    二进制:~~00100111~~ 00000110(Golden纠正) 一个字节来表示 0～2^8-1的数共2^8个数
 十进制的512，二进制:  000000001 000000000 俩个字节来表示 0～2^16-1共2^16个数 
 二进制数转十进制数的方法，简单概括为：按权相加。
 ![clipboard.png](https://sfault-image.b0.upaiyun.com/154/019/1540194220-5b2248bec7861_articlex)
