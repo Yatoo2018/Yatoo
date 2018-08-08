@@ -2,7 +2,7 @@
 layout: post
 title:  "前端工程化的一些术语和对应的工具"
 ---
-<style module>
+<style>
     blockquote {
         color: #a5a5a5;
         border-left: 4px solid #e8e8e8;
