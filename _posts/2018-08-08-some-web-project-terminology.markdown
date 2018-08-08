@@ -64,7 +64,7 @@ title:  "前端工程化的一些术语和对应的工具"
 ## Webpack
 
 > At its core, webpack is a static module bundler for modern JavaScript applications. When webpack processes your application, it internally builds a dependency graph which maps every module your project needs and generates one or more bundles.
-
+>
 > 一个现代JavaScript应用的静态模块打包器。打包过程会生成模块之间的依赖表。
 
 __loader__:  打包依赖于loader.
@@ -73,15 +73,15 @@ __plugin__:  webpack也提供了插件系统，通过插件系统，你可以在
 ### Browserify
 
 > Browserify lets you require('modules') in the browser by bundling up all of your dependencies.
-
+>
 > browserify is a tool for compiling node-flavored commonjs modules for the browser.
-
+>
 > 一个用于为浏览器编译node风格模块的工具
-
+>
 > You can use browserify to organize your code and use third-party libraries even if you don't use node itself in any other capacity except for bundling and installing packages with npm.
-
+>
 > The module system that browserify uses is the same as node, so packages published to npm that were originally intended for use in node but not browsers will work just fine in the browser too.
-
+>
 > Increasingly, people are publishing modules to npm which are intentionally designed to work in both node and in the browser using browserify and many packages on npm are intended for use in just the browser. npm is for all javascript, front or backend alike.
 
 ### rollup.js
