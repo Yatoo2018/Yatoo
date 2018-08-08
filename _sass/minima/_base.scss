@@ -141,7 +141,17 @@ blockquote {
   }
 }
 
-
+/**
+* add by rs
+*/
+blockquote {
+  color: #a5a5a5;
+  border-left: 4px solid #e8e8e8;
+  padding-left: 15px;
+  font-size: 16px;
+  letter-spacing: 0px;
+  font-style: normal;
+}
 
 /**
  * Code formatting

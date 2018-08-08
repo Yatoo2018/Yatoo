@@ -2,16 +2,6 @@
 layout: post
 title:  "前端工程化的一些术语和对应的工具"
 ---
-<style>
-    blockquote {
-        color: #a5a5a5;
-        border-left: 4px solid #e8e8e8;
-        padding-left: 15px;
-        font-size: 16px;
-        letter-spacing: 0px;
-        font-style: normal;
-    }
-</style>
 # 前端工程名词
 认识一下前端工程化过程可能会涉及到的一些名词，这些术语对应的工具。
 
